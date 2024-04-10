@@ -1,18 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class UISaveHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private async void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        await SaveManager.SaveGame("1");
+        print(await SaveManager.LoadSave("1"));
     }
 }
