@@ -21,25 +21,25 @@ public static class SaveManager
 
     private static readonly XmlSerializer xmlSerializer = new XmlSerializer(typeof(saveStats));
 
-    public static string fileLocation(string worldName) => rootDirectory + "/" + worldName + extension;
+    static string FileLocation(string worldName) => rootDirectory + "/" + worldName + extension;
     public static async Task<bool> LoadSave(string worldName)
     {
         if (!Directory.Exists(rootDirectory)) return false;
-        if (!File.Exists(fileLocation(worldName))) return false;
-        Debug.Log(fileLocation(worldName));
-        FileStream fs = File.OpenRead(fileLocation(worldName));
+        if (!File.Exists(FileLocation(worldName))) return false;
+        Debug.Log(FileLocation(worldName));
+        FileStream fs = File.OpenRead(FileLocation(worldName));
         byte[] bytes = new byte[1024];
-        await fs.ReadAsync(bytes, 0, bytes.Length);
+        var readAsync = await fs.ReadAsync(bytes, 0, bytes.Length);
         fs.Close();
-        Debug.Log(Encoding.UTF8.GetString(bytes));
+        Debug.Log(Encoding.UTF8.GetString(bytes,0,readAsync));
         return true;
     }
 
     public static async Task SaveGame(string worldName)
     {
         if (!Directory.Exists(rootDirectory)) Directory.CreateDirectory(rootDirectory);
-        if (File.Exists(fileLocation(worldName))) File.Delete(fileLocation(worldName));
-        FileStream fs = File.OpenWrite(fileLocation(worldName)); // Open the file
+        if (File.Exists(FileLocation(worldName))) File.Delete(FileLocation(worldName));
+        FileStream fs = File.OpenWrite(FileLocation(worldName)); // Open the file
         byte[] buffer = Encoding.UTF8.GetBytes("Bye!");
         await fs.WriteAsync(buffer, 0, buffer.Length);
         Debug.Log(buffer[0]);
