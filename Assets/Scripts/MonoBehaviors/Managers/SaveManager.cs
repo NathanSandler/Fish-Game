@@ -26,12 +26,10 @@ public static class SaveManager
     {
         if (!Directory.Exists(rootDirectory)) return false;
         if (!File.Exists(FileLocation(worldName))) return false;
-        Debug.Log(FileLocation(worldName));
         FileStream fs = File.OpenRead(FileLocation(worldName));
         byte[] bytes = new byte[1024];
         var readAsync = await fs.ReadAsync(bytes, 0, bytes.Length);
         fs.Close();
-        Debug.Log(Encoding.UTF8.GetString(bytes,0,readAsync));
         return true;
     }
 
@@ -41,8 +39,7 @@ public static class SaveManager
         if (File.Exists(FileLocation(worldName))) File.Delete(FileLocation(worldName));
         FileStream fs = File.OpenWrite(FileLocation(worldName)); // Open the file
         byte[] buffer = Encoding.UTF8.GetBytes("Bye!");
-        await fs.WriteAsync(buffer, 0, buffer.Length);
-        Debug.Log(buffer[0]);
+        await fs.WriteAsync(buffer, 0, buffer.Length); ;
         // Closes the file
         await fs.DisposeAsync();
         fs.Close();

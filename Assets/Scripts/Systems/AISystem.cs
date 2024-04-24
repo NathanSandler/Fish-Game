@@ -1,4 +1,5 @@
 using Components;
+using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
@@ -7,6 +8,7 @@ namespace Systems
 {
     public partial struct AISystem : ISystem
     {
+        [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
             foreach (var (aiRO, transformRW) in SystemAPI.Query<RefRO<MovementComponent>, RefRW<LocalTransform>>())
