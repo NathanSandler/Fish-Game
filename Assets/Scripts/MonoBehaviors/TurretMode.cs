@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class TurretMode : MonoBehaviour
 {
+    public static Transform instance { get; private set; }
+
     internal void SetLeftShoot(bool v)
     {
         
@@ -19,6 +21,16 @@ public class TurretMode : MonoBehaviour
     void Start()
     {
         ControlHandler.InitTurret(this);
+
+        if (instance && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = transform;
+        
+
     }
 
     // Update is called once per frame
