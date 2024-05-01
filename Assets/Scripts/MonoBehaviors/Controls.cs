@@ -83,7 +83,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""id"": ""80ff8b11-02bd-43c5-938e-651a40bfbf6a"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""InvertVector2(invertX=false)"",
                     ""groups"": """",
                     ""action"": ""Look"",
                     ""isComposite"": false,

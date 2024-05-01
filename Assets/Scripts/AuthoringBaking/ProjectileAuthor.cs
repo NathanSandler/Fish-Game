@@ -7,7 +7,8 @@ using UnityEngine.UIElements;
 
 public class ProjectileAuthor : MonoBehaviour
 {
-    static float speed = 2f;
+    [SerializeField] private float speed;
+    [SerializeField] private float lifetime;
     [SerializeField] private Transform target;
     private class ProjectileAuthorBaker : Baker<ProjectileAuthor>
     {
@@ -16,10 +17,13 @@ public class ProjectileAuthor : MonoBehaviour
             Entity entity = GetEntity(TransformUsageFlags.Dynamic);
             AddComponent(entity, new MovementComponent()
             {
-                Speed = speed,
+                Speed = authoring.speed,
                 Target = authoring.target.position
             });
-            DependsOn(authoring.target);
+            AddComponent(entity, new LifetimeComponent()
+            {
+                Value = authoring.lifetime
+            });
         }
     }
 }

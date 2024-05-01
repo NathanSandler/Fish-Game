@@ -1,9 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 
 public static class ControlHandler
 {
@@ -19,11 +14,9 @@ public static class ControlHandler
         scrollMode = 1; // 1 is turret, -1 is placement
         inputActions.Turret.Enable();
         inputActions.Permanent.Enable();
-        Debug.Log("Init");
         inputActions.Permanent.ChangeMode.performed += ctx => {
             scrollMode = (int)ctx.ReadValue<float>();
             SwapMode();
-            Debug.Log("Scroll: " + scrollMode);
             };
         inputActions.UI.PauseGame.performed += _ => ExitPause();
         inputActions.Permanent.PauseGame.performed += _ => EnterPause();
@@ -65,6 +58,7 @@ public static class ControlHandler
     public static void InitTurret(TurretMode mode)
     {
         turretMode = mode.gameObject;
+        inputActions.Turret.Look.performed += ctx => mode.SetLookDirection(ctx.ReadValue<Vector2>());
         inputActions.Turret.ShootL.performed += ctx => mode.SetLeftShoot(ctx.ReadValueAsButton());
         inputActions.Turret.ShootR.performed += ctx => mode.SetRightShoot(ctx.ReadValueAsButton());
     }
