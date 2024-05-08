@@ -8,7 +8,6 @@ public partial struct PlayerTurretControlSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
-        
         foreach (var (transform, turret) in
                  SystemAPI.Query<RefRW<LocalTransform>, RefRO<ControlledTurretComponent>>())
         {

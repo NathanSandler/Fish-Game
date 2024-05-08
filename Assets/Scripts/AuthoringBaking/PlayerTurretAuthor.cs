@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Components;
 using Unity.Entities;
 using UnityEngine;
 
@@ -19,11 +20,16 @@ public class PlayerTurretAuthor : MonoBehaviour
             AddComponent(entity, new TurretComponent()
             {
                 turningSpeed = authoring.rotateSpeed,
-                fireSpeed = authoring.fireSpeed,
                 firePoint = GetEntity(authoring.firePoint, TransformUsageFlags.Dynamic),
                 firePoint2 = GetEntity(authoring.firePoint2, TransformUsageFlags.Dynamic),
                 projectile = GetEntity(authoring.projectile, TransformUsageFlags.Dynamic),
-                numProjectiles = authoring.numProjectiles
+            });
+            AddComponent(entity, new ShootingComponent()
+            {
+                maxTime = authoring.fireSpeed,
+                projectile = GetEntity(authoring.projectile, TransformUsageFlags.Dynamic),
+                currentTime = 0,
+                firePoint = GetEntity(authoring.firePoint, TransformUsageFlags.Dynamic)
             });
             AddComponent<ControlledTurretComponent>(entity);
         }
