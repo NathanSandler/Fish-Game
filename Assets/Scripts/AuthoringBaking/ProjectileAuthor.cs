@@ -9,7 +9,7 @@ public class ProjectileAuthor : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float lifetime;
-    [SerializeField] private Transform target;
+    //[SerializeField] private Transform target;
     private class ProjectileAuthorBaker : Baker<ProjectileAuthor>
     {
         public override void Bake(ProjectileAuthor authoring)
@@ -18,7 +18,7 @@ public class ProjectileAuthor : MonoBehaviour
             AddComponent(entity, new MovementComponent()
             {
                 Speed = authoring.speed,
-                Target = authoring.target.position
+                //Target = authoring.target.position
             });
             AddComponent(entity, new LifetimeComponent()
             {

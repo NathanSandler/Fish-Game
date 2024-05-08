@@ -5,7 +5,6 @@ using Unity.Transforms;
 [UpdateBefore(typeof(TransformSystemGroup))]
 public partial struct PlayerTurretControlSystem : ISystem
 {
-    [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
         foreach (var (transform, turret) in
