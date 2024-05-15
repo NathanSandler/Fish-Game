@@ -31,7 +31,11 @@ public class PlayerTurretAuthor : MonoBehaviour
                 currentTime = 0,
                 firePoint = GetEntity(authoring.firePoint, TransformUsageFlags.Dynamic)
             });
-            AddComponent<ControlledTurretComponent>(entity);
+            AddComponent(entity, new ControlledTurretComponent()
+            {
+                e = entity
+            });
+            AddComponent<ActiveTurretComponent>(entity);
         }
     }
 }

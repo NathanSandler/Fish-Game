@@ -6,6 +6,7 @@ using UnityEngine;
 public class TurretMode : MonoBehaviour
 {
     public static Transform PlayerTransform { get; private set; }
+    public static bool isShootingRight { get; private set; }
     [SerializeField, Range(0,90)] private float pitchLimit;
     [SerializeField, Min(0)] private float pitchSpeed;
     [SerializeField, Range(0,180)] private float yawLimit;
@@ -29,7 +30,7 @@ public class TurretMode : MonoBehaviour
 
     internal void SetRightShoot(bool v)
     {
-        
+        isShootingRight = v;
     }
 
     // Start is called before the first frame update

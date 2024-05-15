@@ -22,8 +22,8 @@ public class FishAuthor : MonoBehaviour
             //Entity target = GetEntity(authoring.target, TransformUsageFlags.None);
             AddComponent(entity, new MovementComponent()
             {
-                Speed = stats.Speed,
-                Target = authoring.target.position
+                //Speed = stats.Speed,
+                //Target = authoring.target.position
             });
             DependsOn(authoring.stats);
         }

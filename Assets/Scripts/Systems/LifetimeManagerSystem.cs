@@ -38,7 +38,7 @@ public partial struct LifetimeManagerSystem : ISystem
         }.ScheduleParallel(_query, state.Dependency);
     }
 
-    
+    [BurstCompile]
     private struct lifetimeJob : IJobChunk
     {
         public float deltaTime;
@@ -46,6 +46,7 @@ public partial struct LifetimeManagerSystem : ISystem
         [ReadOnly] public EntityTypeHandle entityHandle;
         public ComponentTypeHandle<LifetimeComponent> componentHandle;
         
+        [BurstCompile]
         public void Execute(in ArchetypeChunk chunk, int unfilteredChunkIndex, bool useEnabledMask, in v128 chunkEnabledMask)
         {
             NativeArray<LifetimeComponent> lifetimeComponents = chunk.GetNativeArray(ref componentHandle);

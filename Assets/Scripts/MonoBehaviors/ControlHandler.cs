@@ -4,7 +4,7 @@ public static class ControlHandler
 {
     private static Controls inputActions;
     private static int scrollMode;
-    private static GameObject turretMode;
+    private static TurretMode turretMode;
     private static GameObject placementMode;
 
     public static void Init()
@@ -41,14 +41,17 @@ public static class ControlHandler
     {
         if (scrollMode == 1)
         {
-            turretMode.SetActive(true);
+            turretMode.gameObject.SetActive(true);
             placementMode.SetActive(false);
             inputActions.Turret.Enable();
             inputActions.Placement.Disable();
+            turretMode.SetLeftShoot(false);
+            turretMode.SetRightShoot(false);
+            turretMode.SetLookDirection(Vector2.zero);
         }
         else if (scrollMode == -1)
         {
-            turretMode.SetActive(false);
+            turretMode.gameObject.SetActive(false);
             placementMode.SetActive(true);
             inputActions.Placement.Enable();
             inputActions.Turret.Disable();
@@ -57,7 +60,7 @@ public static class ControlHandler
 
     public static void InitTurret(TurretMode mode)
     {
-        turretMode = mode.gameObject;
+        turretMode = mode;
         inputActions.Turret.Look.performed += ctx => mode.SetLookDirection(ctx.ReadValue<Vector2>());
         inputActions.Turret.ShootL.performed += ctx => mode.SetLeftShoot(ctx.ReadValueAsButton());
         inputActions.Turret.ShootR.performed += ctx => mode.SetRightShoot(ctx.ReadValueAsButton());

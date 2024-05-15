@@ -7,12 +7,12 @@ public class PlacementMode : MonoBehaviour
 {
     internal void EndPlacement()
     {
-        throw new NotImplementedException();
+        
     }
 
     internal void StartPlacement()
     {
-        throw new NotImplementedException();
+        
     }
 
     // Start is called before the first frame update
