@@ -1294,6 +1294,7 @@ GameObject:
   - component: {fileID: 2083201603}
   - component: {fileID: 2083201602}
   - component: {fileID: 2083201606}
+  - component: {fileID: 2083201607}
   m_Layer: 0
   m_Name: Turret_Body
   m_TagString: Untagged
@@ -1401,13 +1402,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906c5305adba5954493fae33162072bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.01
-  fireSpeed: 0
+--- !u!114 &2083201607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083201601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ea56b018527ba40965a7c7ed9f363f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: d8a9d391d90984f44b73591422e77d2d, type: 2}
   firePoint: {fileID: 1795241037}
-  firePoint2: {fileID: 1795241037}
+  firePoint2: {fileID: 209042206}
   projectile: {fileID: 6487623673232474619, guid: e9a470ecfb2e42a4cbcbf2003cef3848,
     type: 3}
-  numProjectiles: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
