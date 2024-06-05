@@ -64,6 +64,9 @@ public static class ControlHandler
         inputActions.Turret.Look.performed += ctx => mode.SetLookDirection(ctx.ReadValue<Vector2>());
         inputActions.Turret.ShootL.performed += ctx => mode.SetLeftShoot(ctx.ReadValueAsButton());
         inputActions.Turret.ShootR.performed += ctx => mode.SetRightShoot(ctx.ReadValueAsButton());
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public static void InitPlacement(PlacementMode mode)
@@ -73,6 +76,9 @@ public static class ControlHandler
             if (ctx.ReadValueAsButton()) mode.StartPlacement();
             else mode.EndPlacement();
             };
+        
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
     }
 
 

@@ -22,6 +22,7 @@ public partial struct ProjectileSystem : ISystem
     [BurstCompile]
     public void OnCreate(ref SystemState state)
     {
+        state.RequireForUpdate<BeginSimulationEntityCommandBufferSystem.Singleton>();
         positionLookup = SystemAPI.GetComponentLookup<LocalTransform>();
         impactLookup = SystemAPI.GetComponentLookup<ImpactComponent>();
         hitListLookup = SystemAPI.GetBufferLookup<HitList>();

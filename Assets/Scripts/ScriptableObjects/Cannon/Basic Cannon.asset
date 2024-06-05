@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 056eee70134747318eb0440ac89c79b6, type: 3}
+  m_Name: Basic Cannon
+  m_EditorClassIdentifier: 
+  <VisualEffect>k__BackingField: {fileID: 0}
+  <SoundEffect>k__BackingField: {fileID: 0}
+  <Prefab>k__BackingField: {fileID: 6487623673232474619, guid: 15afcf6034868dd4ea3bcaf32cc33e82,
+    type: 3}
+  <FireSpeed>k__BackingField: 0.5
+  <NumProjectile>k__BackingField: 200
+  <Accuracy>k__BackingField: 25
