@@ -22,7 +22,7 @@ public partial struct PlayerTurretControlSystem : ISystem
             //transform.ValueRW = transform.ValueRW.RotateX(time * ControlHandler.lookPos.y * stats.ValueRO.turningSpeed);
             transform.ValueRW.Rotation = TurretMode.PlayerTransform.localRotation;
             
-            shootInput.SetComponentEnabled(turret.ValueRO.e, TurretMode.isShootingRight);
+            shootInput.SetComponentEnabled(turret.ValueRO.rightArm, TurretMode.isShootingRight);
         }
     }
 }

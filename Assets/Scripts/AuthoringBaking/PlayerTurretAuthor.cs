@@ -15,7 +15,7 @@ public class PlayerTurretAuthor : MonoBehaviour
             
             AddComponent(entity, new ControlledTurretComponent()
             {
-                e = entity
+                rightArm = entity
             });
         }
     }

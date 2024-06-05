@@ -6,7 +6,7 @@ namespace Components
 {
     public struct MovementComponent : IComponentData
     {
-        public LocalTransform Target;
+        public Entity Target;
         public float3 Direction;
         public float Gravity;
     }

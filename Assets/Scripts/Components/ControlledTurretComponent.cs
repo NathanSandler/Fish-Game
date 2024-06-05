@@ -2,5 +2,6 @@ using Unity.Entities;
 
 public struct ControlledTurretComponent : IComponentData, IEnableableComponent
 {
-    public Entity e;
+    public Entity rightArm;
+    public Entity leftArm;
 }

@@ -79,6 +79,7 @@ public partial struct TurretSystem : ISystem
         }
     }
 
+    [BurstCompile]
     void Shoot(ref SystemState state, Entity e, float3 pos, quaternion rot, float3 forward)
     {
         //Entity e = ecb.Instantiate(shoot.ValueRO.projectile);

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Components;
+using Unity.Collections;
 using Unity.Entities;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class FishAuthor : MonoBehaviour
@@ -14,6 +16,7 @@ public class FishAuthor : MonoBehaviour
         {
             FishSO stats = authoring.stats;
             Entity entity = GetEntity(TransformUsageFlags.Dynamic);
+            AddComponent<FishComponent>(entity);
             AddComponent(entity, new HealthComponent()
             {
                 Health = stats.Health,
@@ -22,10 +25,23 @@ public class FishAuthor : MonoBehaviour
             //Entity target = GetEntity(authoring.target, TransformUsageFlags.None);
             AddComponent(entity, new MovementComponent()
             {
-                //Speed = stats.Speed,
-                //Target = authoring.target.position
+                Target = GetEntity(authoring.target, TransformUsageFlags.Dynamic),
+                Direction = authoring.transform.forward
             });
             DependsOn(authoring.stats);
+            
+            BlobAssetReference<MovementComponentConfig> config;
+            using (var movement = new BlobBuilder(Allocator.Temp))
+            {
+                ref MovementComponentConfig mcc = ref movement.ConstructRoot<MovementComponentConfig>();
+                mcc.Speed = stats.Speed;
+                config = movement.CreateBlobAssetReference<MovementComponentConfig>(Allocator.Persistent);
+            }
+            AddBlobAsset(ref config, out var hash);
+            AddComponent(entity, new MovementComponentBlob()
+            {
+                config = config
+            });
         }
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d4b16426104cf3bb94af911b9517bc, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  <fireSpeed>k__BackingField: 0.01
-  <numProjectile>k__BackingField: 100
-  <accuracy>k__BackingField: 90
+  <fireSpeed>k__BackingField: 0.1
+  <numProjectile>k__BackingField: 150
+  <accuracy>k__BackingField: 30
   <rotateSpeed>k__BackingField: 0
