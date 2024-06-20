@@ -303,7 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cannons:
   - stats: {fileID: 11400000, guid: 06f993d442517e94c8760575f7b967e6, type: 2}
-    firePoint: {fileID: 0}
+    firePoint: {fileID: 5798030532688113421}
 --- !u!1 &3098483348016752953
 GameObject:
   m_ObjectHideFlags: 0
