@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Eel
   m_EditorClassIdentifier: 
   <Health>k__BackingField: 2
-  <Speed>k__BackingField: 4
+  <Speed>k__BackingField: 40

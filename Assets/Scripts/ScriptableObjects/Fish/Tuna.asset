@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Tuna
   m_EditorClassIdentifier: 
   <Health>k__BackingField: 50
-  <Speed>k__BackingField: 6.96
+  <Speed>k__BackingField: 40
