@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using Components;
+using ScriptableObjects;
 using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class ProjectileAuthor : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    [SerializeField] private float gravity;
-    [SerializeField] private float lifetime;
-    [SerializeField] private GameObject ImpactVFX;
-    [SerializeField] private int maxHits;
+    [SerializeField] private ProjectileSO stats;
     
     //[SerializeField] private Transform target;
     private class ProjectileAuthorBaker : Baker<ProjectileAuthor>
@@ -21,42 +15,46 @@ public class ProjectileAuthor : MonoBehaviour
         {
             Entity entity = GetEntity(TransformUsageFlags.Dynamic);
             
+            /*
             AddComponent(entity, new MovementComponent()
             {
                 //Speed = authoring.speed,
-                Gravity = authoring.gravity
+                Gravity = authoring.stats.Gravity
                 //Target = authoring.target.position
                 
             });
+            */
             
             AddComponent(entity, new LifetimeComponent()
             {
-                Value = authoring.lifetime
+                Value = authoring.stats.Lifetime
             });
             
-            AddComponent(entity, new ImpactComponent()
-            {
-                Prefab = GetEntity(authoring.ImpactVFX, TransformUsageFlags.Renderable),
-                MaxImpactCount = authoring.maxHits
-            });
-
-            if (authoring.maxHits >= 1)
-            {
-                AddBuffer<HitList>();
-            }
-            
-            BlobAssetReference<MovementComponentConfig> config;
+            BlobAssetReference<ProjectileComponentConfig> config;
             using (var movement = new BlobBuilder(Allocator.Temp))
             {
-                ref MovementComponentConfig mcc = ref movement.ConstructRoot<MovementComponentConfig>();
-                mcc.Speed = authoring.speed;
-                config = movement.CreateBlobAssetReference<MovementComponentConfig>(Allocator.Persistent);
+                ref ProjectileComponentConfig mcc = ref movement.ConstructRoot<ProjectileComponentConfig>();
+               // mcc.OnHit = GetEntity(authoring.stats.ImpactEffect, TransformUsageFlags.Renderable);
+                mcc.MaxImpactCount = authoring.stats.Pierce;
+                mcc.Speed = authoring.stats.Speed;
+                mcc.Damage = authoring.stats.Damage;
+                config = movement.CreateBlobAssetReference<ProjectileComponentConfig>(Allocator.Persistent);
             }
             AddBlobAsset(ref config, out var hash);
-            AddComponent(entity, new MovementComponentBlob()
+            AddComponent(entity, new ProjectileComponentBlob()
             {
-                config = config
+                Blob = config,
+                OnHit = GetEntity(authoring.stats.ImpactEffect, TransformUsageFlags.Renderable)
             });
+
+            if (authoring.stats.Pierce >= 1)
+            {
+                AddBuffer<HitList>(entity);
+            }
+            
+            AddComponent<MovementComponent>(entity);
+
+            DependsOn(authoring.stats);
         }
     }
 }

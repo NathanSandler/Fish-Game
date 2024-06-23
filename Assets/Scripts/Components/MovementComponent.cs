@@ -4,20 +4,10 @@ using Unity.Transforms;
 
 namespace Components
 {
+    //When this component is applied, all this data must be defined
     public struct MovementComponent : IComponentData
     {
         public Entity Target;
-        public float3 Direction;
-        public float Gravity;
-    }
-
-    public struct MovementComponentBlob : IComponentData
-    {
-        public BlobAssetReference<MovementComponentConfig> config;
-    }
-    
-    public struct MovementComponentConfig : IComponentData
-    {
-        public float Speed;
+        public float3 Velocity;
     }
 }

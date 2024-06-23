@@ -1492,6 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e364000476042bab8b0368278fb01a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 8c6df86a0bbd9aa4f8bbc06bc6a1adba, type: 2}
   projectile: {fileID: 3854028488776676121, guid: 15afcf6034868dd4ea3bcaf32cc33e82,
     type: 3}
 --- !u!23 &2334010902020449059
@@ -1690,6 +1691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e364000476042bab8b0368278fb01a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats: {fileID: 11400000, guid: 06f993d442517e94c8760575f7b967e6, type: 2}
   projectile: {fileID: 3854028488776676121, guid: e9a470ecfb2e42a4cbcbf2003cef3848,
     type: 3}
 --- !u!23 &8179060728421898733
@@ -1796,11 +1798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ebca955fe742ce9d833f0a3653e542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cannons:
-  - stats: {fileID: 11400000, guid: 06f993d442517e94c8760575f7b967e6, type: 2}
-    firePoint: {fileID: 906965816097466222}
-  - stats: {fileID: 11400000, guid: 8c6df86a0bbd9aa4f8bbc06bc6a1adba, type: 2}
-    firePoint: {fileID: 7941936990568824945}
 --- !u!114 &8851184868141125672
 MonoBehaviour:
   m_ObjectHideFlags: 0

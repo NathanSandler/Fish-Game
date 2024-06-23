@@ -14,15 +14,13 @@ namespace Systems
     {
         private EntityQuery _query;
         private ComponentTypeHandle<MovementComponent> componentHandler;
-        private ComponentTypeHandle<MovementComponentBlob> blobHandler;
         private ComponentTypeHandle<LocalTransform> transformHandler;
 
         [BurstCompile]
         public void OnCreate(ref SystemState state)
         {
-            _query = SystemAPI.QueryBuilder().WithAll<MovementComponent, MovementComponentBlob>().WithAllRW<LocalTransform>().Build();
+            _query = SystemAPI.QueryBuilder().WithAll<MovementComponent>().WithAllRW<LocalTransform>().Build();
             componentHandler = state.GetComponentTypeHandle<MovementComponent>(true);
-            blobHandler = state.GetComponentTypeHandle<MovementComponentBlob>(true);
             transformHandler = state.GetComponentTypeHandle<LocalTransform>(false);
             state.RequireForUpdate(_query);
         }
@@ -31,13 +29,11 @@ namespace Systems
         public void OnUpdate(ref SystemState state)
         {
             componentHandler.Update(ref state);
-            blobHandler.Update(ref state);
             transformHandler.Update(ref state);
             
             state.Dependency = new movementJob()
             {
                 componentHandler = componentHandler,
-                blobHandler = blobHandler,
                 deltaTime = SystemAPI.Time.DeltaTime,
                 transformHandler = transformHandler
             }.ScheduleParallel(_query, state.Dependency);
@@ -59,7 +55,6 @@ namespace Systems
         private struct movementJob : IJobChunk
         {
             [ReadOnly] public ComponentTypeHandle<MovementComponent> componentHandler;
-            [ReadOnly] public ComponentTypeHandle<MovementComponentBlob> blobHandler;
             public ComponentTypeHandle<LocalTransform> transformHandler;
             public float deltaTime;
             
@@ -67,7 +62,6 @@ namespace Systems
             public void Execute(in ArchetypeChunk chunk, int unfilteredChunkIndex, bool useEnabledMask, in v128 chunkEnabledMask)
             {
                 NativeArray<MovementComponent> movementComponents = chunk.GetNativeArray(ref componentHandler);
-                NativeArray<MovementComponentBlob> blobs = chunk.GetNativeArray(ref blobHandler);
                 NativeArray<LocalTransform> localTransforms = chunk.GetNativeArray(ref transformHandler);
                 for (int i = 0; i < chunk.Count; i++)
                 {
@@ -87,10 +81,11 @@ namespace Systems
                         dir = currentMovementComponent.Direction;
                     }*/
 
-                    dir = currentMovementComponent.Direction;
-                    float dist = math.sqrt(dir.x * dir.x + dir.y * dir.y + dir.z * dir.z);
-                    if (dist <= 0.5) continue;
-                    currentLocalTransform.Position += (dir / dist) * (blobs[i].config.Value.Speed * deltaTime)+ (float3)Vector3.up * (currentMovementComponent.Gravity * deltaTime);
+                    //dir = currentMovementComponent.Direction;
+                    //float dist = math.sqrt(dir.x * dir.x + dir.y * dir.y + dir.z * dir.z);
+                    //if (dist <= 0.5) continue;
+                    //currentLocalTransform.Position += (dir / dist) * (currentMovementComponent.Speed * deltaTime)+ (float3)Vector3.up * (currentMovementComponent.Gravity * deltaTime);
+                    currentLocalTransform.Position += (currentMovementComponent.Velocity * deltaTime);
                     
                     localTransforms[i] = currentLocalTransform;
                 }

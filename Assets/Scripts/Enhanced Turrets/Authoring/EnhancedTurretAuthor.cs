@@ -1,21 +1,11 @@
-using System;
 using Enhanced_Turrets.Authoring;
 using Enhanced_Turrets.Components;
-using ScriptableObjects;
 using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
 
 public class EnhancedTurretAuthor : MonoBehaviour
 {
-    [SerializeField] private Cannon[] cannons;
-    
-    [Serializable] 
-    private struct Cannon
-    {
-        public CannonStats stats;
-        public CannonAuthor firePoint;
-    } 
     private class EnhancedTurretAuthorBaker : Baker<EnhancedTurretAuthor>
     {
         public override void Bake(EnhancedTurretAuthor authoring)
@@ -25,10 +15,10 @@ public class EnhancedTurretAuthor : MonoBehaviour
             
             var buffer = AddBuffer<EnhancedShootingComponent>(turret);
             //Let's bake each cannon, and add it to our buffer
-            foreach (Cannon cannon in authoring.cannons)
+            foreach (var cannon in authoring.GetComponentsInChildren<CannonAuthor>())
             {
                 //Bind a dependency for editor purposes
-                DependsOn(cannon.stats);
+                DependsOn(cannon.Stats);
 
                 //Add to blob asset reference... How do we ensure we're not creating a new blob for literally every cannon?
                 BlobAssetReference<EnhancedShootingComponentConfig> config;
@@ -36,15 +26,15 @@ public class EnhancedTurretAuthor : MonoBehaviour
                 {
                     ref EnhancedShootingComponentConfig mcc =
                         ref shooting.ConstructRoot<EnhancedShootingComponentConfig>();
-                    mcc.MaxTime = cannon.stats.FireSpeed;
-                    mcc.Accuracy = cannon.stats.Accuracy;
-                    mcc.NumProjectile = cannon.stats.NumProjectile;
+                    mcc.MaxTime = cannon.Stats.FireSpeed;
+                    mcc.Accuracy = cannon.Stats.Accuracy;
+                    mcc.NumProjectile = cannon.Stats.NumProjectile;
                     config = shooting.CreateBlobAssetReference<EnhancedShootingComponentConfig>(Allocator.Persistent);
                 }
 
                 AddBlobAsset(ref config, out var hash);
 
-                Entity cannonEntity = GetEntity(cannon.firePoint.gameObject, TransformUsageFlags.Dynamic);
+                Entity cannonEntity = GetEntity(cannon.gameObject, TransformUsageFlags.Dynamic);
 
                 //Attach
                 buffer.Add(new EnhancedShootingComponent()

@@ -23,25 +23,13 @@ public class FishAuthor : MonoBehaviour
                 MaxHealth = stats.Health
             });
             //Entity target = GetEntity(authoring.target, TransformUsageFlags.None);
+            
             AddComponent(entity, new MovementComponent()
             {
                 Target = GetEntity(authoring.target, TransformUsageFlags.Dynamic),
-                Direction = authoring.transform.forward
+                Velocity = authoring.transform.forward * stats.Speed
             });
             DependsOn(authoring.stats);
-            
-            BlobAssetReference<MovementComponentConfig> config;
-            using (var movement = new BlobBuilder(Allocator.Temp))
-            {
-                ref MovementComponentConfig mcc = ref movement.ConstructRoot<MovementComponentConfig>();
-                mcc.Speed = stats.Speed;
-                config = movement.CreateBlobAssetReference<MovementComponentConfig>(Allocator.Persistent);
-            }
-            AddBlobAsset(ref config, out var hash);
-            AddComponent(entity, new MovementComponentBlob()
-            {
-                config = config
-            });
         }
     }
 }

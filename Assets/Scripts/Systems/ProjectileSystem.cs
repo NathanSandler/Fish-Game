@@ -1,30 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using System.ComponentModel;
 using Components;
 using Unity.Burst;
 using Unity.Entities;
-using Unity.Jobs;
 using Unity.Physics;
 using Unity.Physics.Systems;
 using Unity.Transforms;
-using UnityEngine;
 
 [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
 [UpdateAfter(typeof(PhysicsSystemGroup))]
 public partial struct ProjectileSystem : ISystem
 {
     [ReadOnly(true)] ComponentLookup<LocalTransform> positionLookup;
-    ComponentLookup<ImpactComponent> impactLookup;
+    ComponentLookup<ProjectileComponentBlob> impactLookup;
     BufferLookup<HitList> hitListLookup;
     ComponentLookup<HealthComponent> healthLookup;
     
     [BurstCompile]
     public void OnCreate(ref SystemState state)
     {
+        state.RequireForUpdate<SimulationSingleton>();
         state.RequireForUpdate<BeginSimulationEntityCommandBufferSystem.Singleton>();
         positionLookup = SystemAPI.GetComponentLookup<LocalTransform>();
-        impactLookup = SystemAPI.GetComponentLookup<ImpactComponent>();
+        impactLookup = SystemAPI.GetComponentLookup<ProjectileComponentBlob>();
         hitListLookup = SystemAPI.GetBufferLookup<HitList>();
         healthLookup = SystemAPI.GetComponentLookup<HealthComponent>();
     }
@@ -55,7 +53,7 @@ public partial struct ProjectileSystem : ISystem
     private struct ProjectileHitJob : ITriggerEventsJob
     {
         [ReadOnly(true)] public ComponentLookup<LocalTransform> Positions;
-        public ComponentLookup<ImpactComponent> Projectiles;
+        public ComponentLookup<ProjectileComponentBlob> Projectiles;
         public ComponentLookup<HealthComponent> EnemiesHealth;
         public EntityCommandBuffer ecb;
         public BufferLookup<HitList> HitLists;
@@ -93,12 +91,13 @@ public partial struct ProjectileSystem : ISystem
             
             if (hp.Health <= 0)
                 ecb.DestroyEntity(enemy);
+
+            var blob = Projectiles[projectile].Blob.Value;
             
-            Entity impactEntity = ecb.Instantiate(Projectiles[projectile].Prefab);
-            ecb.SetComponent(impactEntity, 
-                LocalTransform.FromPosition(Positions[enemy].Position));
+            Entity impactEntity = ecb.Instantiate(Projectiles[projectile].OnHit);
+            ecb.SetComponent(impactEntity, LocalTransform.FromPosition(Positions[enemy].Position));
             
-            if (Projectiles[projectile].MaxImpactCount <= HitLists[projectile].Length)
+            if (blob.MaxImpactCount <= HitLists[projectile].Length)
                 ecb.DestroyEntity(projectile);
         }
     }

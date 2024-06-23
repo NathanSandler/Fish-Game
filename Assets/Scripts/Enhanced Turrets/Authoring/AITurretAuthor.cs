@@ -5,6 +5,8 @@ using UnityEngine;
 public class AITurretAuthor : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed;
+    [SerializeField] private Transform upDownJoint;
+    [SerializeField] private Transform leftRightJoint;
     private class AITurretAuthorBaker : Baker<AITurretAuthor>
     {
         public override void Bake(AITurretAuthor authoring)

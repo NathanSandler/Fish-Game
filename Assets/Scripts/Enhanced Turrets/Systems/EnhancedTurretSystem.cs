@@ -81,19 +81,14 @@ public partial struct EnhancedTurretSystem : ISystem
         {
             Position = pos,
             Rotation = rot,
-            Scale = 0.2f
+            Scale = 1
         });
-        //ecb.SetComponent(e, new PhysicsVelocity()
-        /*state.EntityManager.SetComponentData(e, new PhysicsVelocity()
-        {
-            Linear = firePoint.Forward * SystemAPI.GetComponent<MovementComponent>(e).Speed
-        });*/
 
-        MovementComponent x = SystemAPI.GetComponent<MovementComponent>(e);
-        state.EntityManager.SetComponentData(e, new MovementComponent()
+        var x = SystemAPI.GetComponent<ProjectileComponentBlob>(e);
+        SystemAPI.SetComponent(e, new MovementComponent()
         {
-            Direction = forward,
-            Gravity = x.Gravity,
+            Velocity = forward * x.Blob.Value.Speed,
+
         });
     }
 }
