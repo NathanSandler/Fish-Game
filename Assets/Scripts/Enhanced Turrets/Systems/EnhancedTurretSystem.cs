@@ -19,7 +19,7 @@ public partial struct EnhancedTurretSystem : ISystem
         {
             //Update all the cannons
 
-            if (!SystemAPI.IsBufferEnabled<EnhancedShootingComponent>(entity)) return;
+            if (!SystemAPI.IsBufferEnabled<EnhancedShootingComponent>(entity)) continue;
 
             var buffer = SystemAPI.GetBuffer<EnhancedShootingComponent>(entity);
             

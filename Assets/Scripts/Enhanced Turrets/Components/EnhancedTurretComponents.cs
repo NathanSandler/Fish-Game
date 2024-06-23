@@ -1,4 +1,5 @@
 using Unity.Entities;
+using Unity.Mathematics;
 
 namespace Enhanced_Turrets.Components
 {
@@ -11,6 +12,9 @@ namespace Enhanced_Turrets.Components
     public struct AiTurretComponent : IComponentData, IEnableableComponent
     {
         public float TurningSpeed;
+        public Entity LeftRightRotation;
+        public Entity UpDownRotation;
+        public Entity Eye;
     }
 
     public struct ControlledTurretComponent : IComponentData, IEnableableComponent

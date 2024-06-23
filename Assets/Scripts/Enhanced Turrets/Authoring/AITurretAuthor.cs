@@ -7,6 +7,7 @@ public class AITurretAuthor : MonoBehaviour
     [SerializeField] private float rotationSpeed;
     [SerializeField] private Transform upDownJoint;
     [SerializeField] private Transform leftRightJoint;
+    [SerializeField] private Transform eye;
     private class AITurretAuthorBaker : Baker<AITurretAuthor>
     {
         public override void Bake(AITurretAuthor authoring)
@@ -14,7 +15,10 @@ public class AITurretAuthor : MonoBehaviour
             Entity entity = GetEntity(TransformUsageFlags.Dynamic);
             AddComponent(entity, new AiTurretComponent
             {
-                TurningSpeed =  authoring.rotationSpeed
+                TurningSpeed =  authoring.rotationSpeed,
+                LeftRightRotation = GetEntity(authoring.leftRightJoint, TransformUsageFlags.Dynamic),
+                UpDownRotation = GetEntity(authoring.upDownJoint, TransformUsageFlags.Dynamic),
+                Eye = GetEntity(authoring.eye, TransformUsageFlags.Dynamic)
             });
         }
     }
