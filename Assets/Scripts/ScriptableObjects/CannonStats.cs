@@ -9,8 +9,7 @@ namespace ScriptableObjects
     {
         //We can change from GameObject to something more specific if we want.
         [field: Header("Effects")]
-        [field: SerializeField] public VisualEffect VisualEffect { get; private set; }
-        [field: SerializeField] public AudioClip SoundEffect { get; private set; }
+        [field: SerializeField] public GameObject ShootEffect { get; private set; }
         
         
         [field: Header("Turret Stats")]

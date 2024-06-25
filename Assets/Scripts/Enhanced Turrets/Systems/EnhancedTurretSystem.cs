@@ -37,6 +37,9 @@ public partial struct EnhancedTurretSystem : ISystem
 
                     LocalToWorld firePoint = SystemAPI.GetComponent<LocalToWorld>(buffer[index].Cannon);
                     
+                    Entity shootFx = state.EntityManager.Instantiate(cannon.ShootEffect);
+                    SetDirection(ref state, shootFx, firePoint.Position, quaternion.LookRotation(firePoint.Forward, firePoint.Up));
+                    
                     for (int i = 0; i < blob.NumProjectile; i++)
                     {
                         
@@ -56,11 +59,14 @@ public partial struct EnhancedTurretSystem : ISystem
                         // Apply the firePoint rotation to get the final direction
                         float3 direction = math.mul(firePoint.Rotation, randomDirection);
                         direction = math.normalize(direction);
-
+        
+                        
+                        
                         // Call your Shoot method with the correct direction and rotation
-                        Shoot(ref state, e, firePoint.Position, quaternion.LookRotation(direction, firePoint.Up),
-                            direction);
+                        SetDirection(ref state, e, firePoint.Position, quaternion.LookRotation(direction, firePoint.Up));
+                        Shoot(ref state, e, direction);
                     }
+                    
                 }
 
                 shoot.CurrentTime = currentTime;
@@ -71,24 +77,25 @@ public partial struct EnhancedTurretSystem : ISystem
     }
 
     [BurstCompile]
-    void Shoot(ref SystemState state, Entity e, float3 pos, quaternion rot, float3 forward)
+    void Shoot(ref SystemState state, Entity e, float3 forward)
     {
-        //Entity e = ecb.Instantiate(shoot.ValueRO.projectile);
-        
-
-        //ecb.SetComponent(e, new LocalToWorld()
-        state.EntityManager.SetComponentData(e, new LocalTransform()
-        {
-            Position = pos,
-            Rotation = rot,
-            Scale = 1
-        });
 
         var x = SystemAPI.GetComponent<ProjectileComponentBlob>(e);
         SystemAPI.SetComponent(e, new MovementComponent()
         {
             Velocity = forward * x.Blob.Value.Speed,
 
+        });
+    }
+
+    [BurstCompile]
+    void SetDirection(ref SystemState state, Entity e, float3 pos, quaternion rot)
+    {
+        state.EntityManager.SetComponentData(e, new LocalTransform()
+        {
+            Position = pos,
+            Rotation = rot,
+            Scale = 1
         });
     }
 }

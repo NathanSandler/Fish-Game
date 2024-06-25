@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 056eee70134747318eb0440ac89c79b6, type: 3}
+  m_Name: Explosive Cannon
+  m_EditorClassIdentifier: 
+  <ShootEffect>k__BackingField: {fileID: 1712268504613126880, guid: 4ce7db4ca30ac7e44b3abcf061c55da0,
+    type: 3}
+  <Prefab>k__BackingField: {fileID: 6487623673232474619, guid: 2f057934879e12848b3794206b472e29,
+    type: 3}
+  <FireSpeed>k__BackingField: 1
+  <NumProjectile>k__BackingField: 1
+  <Accuracy>k__BackingField: 5

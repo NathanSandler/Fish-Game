@@ -17,6 +17,7 @@ namespace Enhanced_Turrets.Components
     {
         public float CurrentTime;
         public Entity Projectile;
+        public Entity ShootEffect;
     }
 
     public struct EnhancedShootingComponentConfig : IComponentData

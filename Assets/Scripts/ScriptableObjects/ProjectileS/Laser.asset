@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49091887b8604fa8b909823b5bfd200f, type: 3}
+  m_Name: Laser
+  m_EditorClassIdentifier: 
+  <Damage>k__BackingField: 1
+  <Speed>k__BackingField: 100
+  <Lifetime>k__BackingField: 5
+  <Pierce>k__BackingField: 1
+  <ImpactEffect>k__BackingField: {fileID: 7753351518812004098, guid: 98548732f23626240b61b7b79d1cf23a,
+    type: 3}

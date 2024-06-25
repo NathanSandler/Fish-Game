@@ -15,7 +15,8 @@ namespace Enhanced_Turrets.Authoring
             {
                 AddComponent(GetEntity(authoring.gameObject, TransformUsageFlags.Dynamic), new EnhancedCannonComponent()
                 {
-                    Projectile = GetEntity(authoring.stats.Prefab, TransformUsageFlags.Dynamic)
+                    Projectile = GetEntity(authoring.stats.Prefab, TransformUsageFlags.Dynamic),
+                    ShootEffect = GetEntity(authoring.stats.ShootEffect, TransformUsageFlags.Renderable)
                 });
             }
         }

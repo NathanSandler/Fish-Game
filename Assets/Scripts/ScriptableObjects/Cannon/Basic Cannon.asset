@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 056eee70134747318eb0440ac89c79b6, type: 3}
   m_Name: Basic Cannon
   m_EditorClassIdentifier: 
-  <VisualEffect>k__BackingField: {fileID: 0}
-  <SoundEffect>k__BackingField: {fileID: 0}
+  <ShootEffect>k__BackingField: {fileID: 1712268504613126880, guid: 4ce7db4ca30ac7e44b3abcf061c55da0,
+    type: 3}
   <Prefab>k__BackingField: {fileID: 6487623673232474619, guid: 15afcf6034868dd4ea3bcaf32cc33e82,
     type: 3}
   <FireSpeed>k__BackingField: 0.5

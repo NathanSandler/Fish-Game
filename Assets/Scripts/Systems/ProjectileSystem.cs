@@ -3,6 +3,7 @@ using System.ComponentModel;
 using Components;
 using Unity.Burst;
 using Unity.Entities;
+using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Physics.Systems;
 using Unity.Transforms;
@@ -11,7 +12,7 @@ using Unity.Transforms;
 [UpdateAfter(typeof(PhysicsSystemGroup))]
 public partial struct ProjectileSystem : ISystem
 {
-    [ReadOnly(true)] ComponentLookup<LocalTransform> positionLookup;
+    [ReadOnly(true)] ComponentLookup<LocalToWorld> positionLookup;
     ComponentLookup<ProjectileComponentBlob> impactLookup;
     BufferLookup<HitList> hitListLookup;
     ComponentLookup<HealthComponent> healthLookup;
@@ -21,7 +22,7 @@ public partial struct ProjectileSystem : ISystem
     {
         state.RequireForUpdate<SimulationSingleton>();
         state.RequireForUpdate<BeginSimulationEntityCommandBufferSystem.Singleton>();
-        positionLookup = SystemAPI.GetComponentLookup<LocalTransform>();
+        positionLookup = SystemAPI.GetComponentLookup<LocalToWorld>();
         impactLookup = SystemAPI.GetComponentLookup<ProjectileComponentBlob>();
         hitListLookup = SystemAPI.GetBufferLookup<HitList>();
         healthLookup = SystemAPI.GetComponentLookup<HealthComponent>();
@@ -45,19 +46,20 @@ public partial struct ProjectileSystem : ISystem
             EnemiesHealth = healthLookup,
             Positions = positionLookup,
             HitLists = hitListLookup,
-            ecb = ecb
+            ECB = ecb
         }.Schedule(simulation, state.Dependency);
     }
 
     [BurstCompile]
     private struct ProjectileHitJob : ITriggerEventsJob
     {
-        [ReadOnly(true)] public ComponentLookup<LocalTransform> Positions;
+        [ReadOnly(true)] public ComponentLookup<LocalToWorld> Positions;
         public ComponentLookup<ProjectileComponentBlob> Projectiles;
         public ComponentLookup<HealthComponent> EnemiesHealth;
-        public EntityCommandBuffer ecb;
+        public EntityCommandBuffer ECB;
         public BufferLookup<HitList> HitLists;
-        
+        private static readonly float3 Up = new float3(0, 1, 0);
+
         [BurstCompile]
         public void Execute(TriggerEvent triggerEvent)
         {
@@ -84,21 +86,20 @@ public partial struct ProjectileSystem : ISystem
             }
             
             hits.Add(new HitList { entity = enemy });
-            
+            var blob = Projectiles[projectile].Blob.Value;
+
             HealthComponent hp = EnemiesHealth[enemy];
-            hp.Health -= 5;
+            hp.Health -= blob.Damage;
             EnemiesHealth[enemy] = hp;
             
             if (hp.Health <= 0)
-                ecb.DestroyEntity(enemy);
+                ECB.DestroyEntity(enemy);
 
-            var blob = Projectiles[projectile].Blob.Value;
-            
-            Entity impactEntity = ecb.Instantiate(Projectiles[projectile].OnHit);
-            ecb.SetComponent(impactEntity, LocalTransform.FromPosition(Positions[enemy].Position));
+            Entity impactEntity = ECB.Instantiate(Projectiles[projectile].OnHit);
+            ECB.SetComponent(impactEntity, LocalTransform.FromPositionRotation(Positions[enemy].Position, quaternion.LookRotation(-Positions[projectile].Forward, Up)));
             
             if (blob.MaxImpactCount <= HitLists[projectile].Length)
-                ecb.DestroyEntity(projectile);
+                ECB.DestroyEntity(projectile);
         }
     }
 }

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 056eee70134747318eb0440ac89c79b6, type: 3}
   m_Name: ionCanon
   m_EditorClassIdentifier: 
-  <VisualEffect>k__BackingField: {fileID: 0}
-  <SoundEffect>k__BackingField: {fileID: 0}
-  <Prefab>k__BackingField: {fileID: 0}
-  <FireSpeed>k__BackingField: 0
-  <NumProjectile>k__BackingField: 0
-  <Accuracy>k__BackingField: 0
+  <ShootEffect>k__BackingField: {fileID: 1712268504613126880, guid: 4ce7db4ca30ac7e44b3abcf061c55da0,
+    type: 3}
+  <Prefab>k__BackingField: {fileID: 6487623673232474619, guid: e1290a9250bada746906b17fcdebcc87,
+    type: 3}
+  <FireSpeed>k__BackingField: 0.05
+  <NumProjectile>k__BackingField: 1
+  <Accuracy>k__BackingField: 2
