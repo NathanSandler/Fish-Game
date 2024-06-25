@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class PlacementMode : MonoBehaviour
 {
-    internal void EndPlacement()
+    internal void ExitPlacementMode()
     {
         
     }
 
-    internal void StartPlacement()
+    internal void EnterPlacementMode()
     {
         
+        // Show UI to place stuff
+        // Stop placement
     }
 
     // Start is called before the first frame update

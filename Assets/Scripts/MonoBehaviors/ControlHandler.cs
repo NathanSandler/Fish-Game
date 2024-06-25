@@ -65,20 +65,20 @@ public static class ControlHandler
         inputActions.Turret.ShootL.performed += ctx => mode.SetLeftShoot(ctx.ReadValueAsButton());
         inputActions.Turret.ShootR.performed += ctx => mode.SetRightShoot(ctx.ReadValueAsButton());
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     public static void InitPlacement(PlacementMode mode)
     {
         placementMode = mode.gameObject;
         inputActions.Placement.Place.performed += ctx => {
-            if (ctx.ReadValueAsButton()) mode.StartPlacement();
-            else mode.EndPlacement();
+            if (ctx.ReadValueAsButton()) mode.EnterPlacementMode();
+            else mode.ExitPlacementMode();
             };
         
-        Cursor.lockState = CursorLockMode.Confined;
-        Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.visible = true;
     }
 
 
