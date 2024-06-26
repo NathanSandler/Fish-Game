@@ -72,11 +72,14 @@ public static class ControlHandler
     public static void InitPlacement(PlacementMode mode)
     {
         placementMode = mode.gameObject;
-        inputActions.Placement.Place.performed += ctx => {
+        /*inputActions.Placement.Place.performed += ctx => {
             if (ctx.ReadValueAsButton()) mode.EnterPlacementMode();
             else mode.ExitPlacementMode();
-            };
-        
+            };*/
+
+        inputActions.Placement.Place.performed += ctx => mode.OnClick();
+        inputActions.Placement.MousePos.performed += ctx => mode.OnMouseMoved(ctx.ReadValue<Vector2>());
+
         //Cursor.lockState = CursorLockMode.Confined;
         //Cursor.visible = true;
     }

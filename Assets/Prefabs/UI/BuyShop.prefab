@@ -372,7 +372,8 @@ MonoBehaviour:
   - {fileID: 1879029938933129652, guid: c29008ba100b9b8448137307e97edbd0, type: 3}
   - {fileID: 5241173088619290953, guid: c5c0dd04dfb1ab44baf7b4e118aee57f, type: 3}
   - {fileID: 5465538379768277552, guid: 5db0ef820b98a1d42b8108387e89efac, type: 3}
-  gridLayout: {fileID: 6649591932439296123}
+  storeButton: {fileID: 0}
+  gridLayout: {fileID: 322297393178946230}
 --- !u!1 &6471151464354216321
 GameObject:
   m_ObjectHideFlags: 0

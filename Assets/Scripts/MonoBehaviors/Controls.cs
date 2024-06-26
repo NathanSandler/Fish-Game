@@ -103,6 +103,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MousePos"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""e5406b35-856e-4f3a-85b3-a32eed27ce4b"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -125,6 +134,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Place"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6cfc6335-d636-42eb-808c-080a36411e60"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePos"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -239,6 +259,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         // Placement
         m_Placement = asset.FindActionMap("Placement", throwIfNotFound: true);
         m_Placement_Place = m_Placement.FindAction("Place", throwIfNotFound: true);
+        m_Placement_MousePos = m_Placement.FindAction("MousePos", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_PauseGame = m_UI.FindAction("PauseGame", throwIfNotFound: true);
@@ -370,11 +391,13 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Placement;
     private List<IPlacementActions> m_PlacementActionsCallbackInterfaces = new List<IPlacementActions>();
     private readonly InputAction m_Placement_Place;
+    private readonly InputAction m_Placement_MousePos;
     public struct PlacementActions
     {
         private @Controls m_Wrapper;
         public PlacementActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Place => m_Wrapper.m_Placement_Place;
+        public InputAction @MousePos => m_Wrapper.m_Placement_MousePos;
         public InputActionMap Get() { return m_Wrapper.m_Placement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -387,6 +410,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Place.started += instance.OnPlace;
             @Place.performed += instance.OnPlace;
             @Place.canceled += instance.OnPlace;
+            @MousePos.started += instance.OnMousePos;
+            @MousePos.performed += instance.OnMousePos;
+            @MousePos.canceled += instance.OnMousePos;
         }
 
         private void UnregisterCallbacks(IPlacementActions instance)
@@ -394,6 +420,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Place.started -= instance.OnPlace;
             @Place.performed -= instance.OnPlace;
             @Place.canceled -= instance.OnPlace;
+            @MousePos.started -= instance.OnMousePos;
+            @MousePos.performed -= instance.OnMousePos;
+            @MousePos.canceled -= instance.OnMousePos;
         }
 
         public void RemoveCallbacks(IPlacementActions instance)
@@ -520,6 +549,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     public interface IPlacementActions
     {
         void OnPlace(InputAction.CallbackContext context);
+        void OnMousePos(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

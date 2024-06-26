@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StaticUtilities : MonoBehaviour
+public static class StaticUtilities
 {
-    // Start is called before the first frame update
-    void Start()
+    public static readonly int placableLayer = 1<< LayerMask.NameToLayer("Placable");
+    public static readonly int nonPlacableLayer = 1<< LayerMask.NameToLayer("NotPlacable");
+    public static readonly int PlacingLayers = placableLayer | nonPlacableLayer;
+    public static readonly Dictionary<TurretType, Color> colorConversion = new Dictionary<TurretType, Color>
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        {TurretType.Explosive, Color.red},
+        { TurretType.Laser, Color.cyan}
+    };
 }

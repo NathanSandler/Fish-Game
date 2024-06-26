@@ -246,7 +246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 247900590}
   - component: {fileID: 247900589}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Placable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1970,7 +1970,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.43, y: 10.54, z: 47.84}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 373547958457492950}
   m_Father: {fileID: 0}
@@ -2281,6 +2281,7 @@ GameObject:
   - component: {fileID: 7316080042478418695}
   - component: {fileID: 3410911465986649538}
   - component: {fileID: 5721513255535020634}
+  - component: {fileID: 7325182504980952194}
   m_Layer: 0
   m_Name: IonCanon5
   m_TagString: Untagged
@@ -4327,7 +4328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e364000476042bab8b0368278fb01a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats: {fileID: 11400000, guid: 8c6df86a0bbd9aa4f8bbc06bc6a1adba, type: 2}
+  stats: {fileID: 11400000, guid: 3490b9fe408f47341b71f111b2e1b47a, type: 2}
 --- !u!23 &5599630841323171360
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4549,6 +4550,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2484093502385656565}
   m_Mesh: {fileID: 4300000, guid: faa3716e10170472a8b2fa9fb6b646c7, type: 3}
+--- !u!135 &7325182504980952194
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2484093502385656565}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 702.95
+  m_Center: {x: 0.000030517578, y: 34.81367, z: 0}
 --- !u!33 &7399799756777685145
 MeshFilter:
   m_ObjectHideFlags: 0
