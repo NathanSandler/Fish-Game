@@ -19,6 +19,7 @@ class TurretRegisterAuthor : MonoBehaviour
             AddComponent<TurretRegisterSingleton>(e);
             SetComponentEnabled<TurretRegisterSingleton>(e, false);
 
+            
             var buffer = AddBuffer<TurretVariants>(e);
             foreach (var shopItem in authoring.ShopItemsSo)
             {

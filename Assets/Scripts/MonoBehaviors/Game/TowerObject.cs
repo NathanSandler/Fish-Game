@@ -23,12 +23,15 @@ public class TowerObject : MonoBehaviour
     {
         transform.localScale = binding.localScale;
         //Convert the object to an entity. Alternatively, could have a singleton system in ECS and just tell it what tower and where 
-        Entity singleton = ObjectPlacer.EntityManager.CreateEntityQuery(typeof(TurretRegisterSingleton)).ToEntityArray(Allocator.Temp)[0];
+        Entity singleton = ObjectPlacer.EntityManager.CreateEntityQuery(new EntityQueryBuilder(Allocator.Temp).WithDisabled<TurretRegisterSingleton>()).ToEntityArray(Allocator.Temp)[0]; //typeof(TurretRegisterSingleton)
         ObjectPlacer.EntityManager.SetComponentData(singleton, new TurretRegisterSingleton()
         {
             Location = binding.position,
             TurretID = index
         });
+        
+        Debug.Log("Trying to create a turret with ID: " + index);
+        
         ObjectPlacer.EntityManager.SetComponentEnabled<TurretRegisterSingleton>(singleton, true);
         
         //_boundEntity = ObjectPlacer.EntityManager.CreateEntity();

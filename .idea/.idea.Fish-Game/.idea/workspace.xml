@@ -5,44 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6f2e17a-179c-4b62-880f-3a729590e9c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/InverseHullOutline.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/InverseHullOutline.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/Outline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/Outline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/TowerPlacement.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/TowerPlacement.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/PlacementAuthor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/PlacementAuthor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/TurretRegisterSingletonSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/TurretRegisterSingletonSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/ObjectPlacer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/ObjectPlacer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/TowerObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/TowerObject.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fish-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fish-Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/Explosions.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Explosions.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/HitVFX.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/HitVFX.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/LaserHit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/LaserHit.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/ShootEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/ShootEffect.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_4_var_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_4_var_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/Unity Physics/1.0.16/Custom Physics Authoring/Unity.Physics.Custom/Joints/LimitDOFJoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Unity Physics/1.0.16/Custom Physics Authoring/Unity.Physics.Custom/Joints/LimitDOFJoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FishGameEcs.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FishGameEcs.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/ControlHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/ControlHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlacementMode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlacementMode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UI/UIShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UI/UIShopManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EntitiesClientSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EntitiesClientSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/TowerObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/TowerObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +140,7 @@
       <workItem from="1719777928412" duration="4775000" />
       <workItem from="1719789865314" duration="1024000" />
       <workItem from="1719879660903" duration="2338000" />
-      <workItem from="1719932461312" duration="7157000" />
+      <workItem from="1719932461312" duration="7536000" />
     </task>
     <servers />
   </component>
