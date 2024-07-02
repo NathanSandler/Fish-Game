@@ -20,7 +20,8 @@ public class UIShopManager : MonoBehaviour
         {
             ShopItemsSO item = TurretRegisterAuthor.TurretRegisterAuthorBaker.ShopItems[index];
             Button b = Instantiate(storeButton, gridLayout);
-            b.onClick.AddListener(() => PlacementMode.Instance.BindTurret(item, index));
+            int actual = index;
+            b.onClick.AddListener(() => PlacementMode.Instance.BindTurret(item, actual));
 
             Transform t = b.transform;
             t.GetChild(0).GetComponent<Image>().color = StaticUtilities.colorConversion[item.Type];

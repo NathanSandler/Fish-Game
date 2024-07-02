@@ -30,7 +30,7 @@ public class TowerObject : MonoBehaviour
             TurretID = index
         });
         
-        Debug.Log("Trying to create a turret with ID: " + index);
+        Debug.Log("Trying to create a turret with ID: " + index + "at position:  " + binding.position);
         
         ObjectPlacer.EntityManager.SetComponentEnabled<TurretRegisterSingleton>(singleton, true);
         

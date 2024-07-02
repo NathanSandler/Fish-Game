@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6f2e17a-179c-4b62-880f-3a729590e9c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fish-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fish-Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/TurretRegisterSingletonSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/TurretRegisterSingletonSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/TowerObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/TowerObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UI/UIShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UI/UIShopManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +142,7 @@
       <workItem from="1719777928412" duration="4775000" />
       <workItem from="1719789865314" duration="1024000" />
       <workItem from="1719879660903" duration="2338000" />
-      <workItem from="1719932461312" duration="7536000" />
+      <workItem from="1719932461312" duration="8859000" />
     </task>
     <servers />
   </component>
