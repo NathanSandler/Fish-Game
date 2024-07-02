@@ -394,6 +394,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &711744654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711744656}
+  - component: {fileID: 711744655}
+  m_Layer: 0
+  m_Name: TurretRegister
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &711744655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711744654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fae7e0e0aa67d24e8b87fd1b224b02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ShopItemsSo>k__BackingField:
+  - {fileID: 11400000, guid: 24fd0473f6fb6014a9a67a620084d680, type: 2}
+  - {fileID: 11400000, guid: 245f65eb4b087b54b8448f3b36ae4bb8, type: 2}
+  - {fileID: 11400000, guid: 9b7b02da17c2f034f9c7f7291cb2fae8, type: 2}
+  - {fileID: 11400000, guid: 603b64aa7ed702e4a86dbab9252c06a6, type: 2}
+--- !u!4 &711744656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711744654}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774904039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,6 +3183,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b993b389fd3984a26a86339a80ff1021, type: 2}
+  - {fileID: 2100000, guid: c3c1f5456108f9444805e54ca7434b86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4565,7 +4615,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5013,3 +5063,4 @@ SceneRoots:
   - {fileID: 1808882820}
   - {fileID: 301148918500440971}
   - {fileID: 4000012566209251}
+  - {fileID: 711744656}

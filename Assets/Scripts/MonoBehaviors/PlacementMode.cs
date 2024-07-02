@@ -1,12 +1,10 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(ObjectPlacer))]
 public class PlacementMode : MonoBehaviour
 {
-    public static PlacementMode instance { get; private set; }
+    public static PlacementMode Instance { get; private set; }
     [SerializeField] private GameObject storePanel;
     
     [SerializeField] Transform pointA;
@@ -14,72 +12,52 @@ public class PlacementMode : MonoBehaviour
     [SerializeField] float transitionTime;
     [SerializeField] AnimationCurve curve;
 
-    private Camera cam;
-    private Transform placementObject;
-    private ShopItemsSO stats;
-    private Vector2 mousePos;
+    private int _index;
+    private ShopItemsSO _stats;
+    private ObjectPlacer _placer;
     
-    public void OnDisable()
+    public void Disable()
     {
-        //UnBindTurret();
+        UnBindTurret();
+        Lower();
+        _placer.enabled = false;
     }
 
-    public void OnEnable()
+    public void Enable()
     {
         Rise();
-
-        // Show UI to place stuff
-        // Stop placement
+      
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        instance = this;
+        Instance = this;
         ControlHandler.InitPlacement(this);
-        cam = Camera.main;
+        _placer = GetComponent<ObjectPlacer>();
+        storePanel.SetActive(false);
+        _placer.enabled = false;
     }
-
-    // Update is called once per frame
-    void LateUpdate()
+    
+    public void BindTurret(ShopItemsSO objectStats, int index)
     {
-        if (stats == null)
-        {
-            return;
-        }
-        Debug.DrawRay(cam.ScreenPointToRay(mousePos).origin, cam.ScreenPointToRay(mousePos).direction * 1000f, Color.red);
-
-        if (!Physics.Raycast(cam.ScreenPointToRay(mousePos), out RaycastHit hit, 1000f, StaticUtilities.placableLayer))
-        {
-            return;
-        }
-
-        placementObject.position = hit.point;
-
-        if (Physics.CheckSphere(hit.point, stats.Radius, StaticUtilities.nonPlacableLayer))
-        {
-            return;
-        }
-    }
-
-    public void BindTurret(ShopItemsSO stats)
-    {
-        this.stats = stats;
-        placementObject = Instantiate(stats.Prefab);
-        Lower(); ;
+        _stats = objectStats;
+        _index = index;
+        Debug.Log("Binding Turret: " + objectStats.name);
+        Lower(); 
+        _placer.BindObject(Instantiate(objectStats.Prefab), objectStats.Radius);
     }
 
     public void UnBindTurret()
     {
-        stats = null;
-        placementObject = null;
-        Rise();
+        _stats = null;
+        _placer.ClearObject();
     }
 
     private IEnumerator MovePopup(Vector3 a, Vector3 b, bool isOn)
@@ -107,26 +85,38 @@ public class PlacementMode : MonoBehaviour
         public void Lower()
         {
             StartCoroutine(MovePopup(pointB.position, pointA.position, false));
-
         }
 
         public void OnClick()
         {
-            UnBindTurret();
+            //Theres a problem with this function; If OnClick runs immediately before we do stats, then major sadness.
+            if (_stats) TryPlaceTurret();
+            else InspectTurret();
+            
+
+
+            //Debug.Log("Inject a new actual turret into the ECS world?");
+            //UnBindTurret();
+            //Rise();
+        }
+
+        private void TryPlaceTurret()
+        {
+            Debug.Log("Trying to place turret");
+
+            //From here, we need to raycast.
+            if(_placer.PlaceObject(_stats, _index))   
+                _stats = null;
+        }
+
+        private void InspectTurret()
+        {
+            Debug.Log("Trying to inspect turret");
+
         }
 
         public void OnMouseMoved(Vector2 readValue)
         {
-            mousePos = readValue;
-        }
-
-        private void OnDrawGizmos()
-        {
-            if (stats == null) return;
-            if (!Physics.Raycast(cam.ScreenPointToRay(mousePos), out RaycastHit hit, 1000f,
-                    StaticUtilities.placableLayer))
-            {
-                Gizmos.DrawWireSphere(hit.point, stats.Radius);
-            }
+            _placer.MousePos = readValue;
         }
 }

@@ -209,7 +209,7 @@ MonoBehaviour:
   rotationSpeed: 5
   upDownJoint: {fileID: 4000011187994668}
   leftRightJoint: {fileID: 4000012604501588}
-  BakeOnly_EyePosition: {fileID: 3486903599419011882}
+  eye: {fileID: 3486903599419011882}
 --- !u!114 &-1049293959931504970
 MonoBehaviour:
   m_ObjectHideFlags: 0

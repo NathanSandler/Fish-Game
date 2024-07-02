@@ -1,16 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
 [DefaultExecutionOrder(1000)]
 public class UIShopManager : MonoBehaviour
 {
-    public ShopItemsSO[] shopItems;
+
+    
     public Button storeButton;
     public RectTransform gridLayout;
         
@@ -18,14 +14,14 @@ public class UIShopManager : MonoBehaviour
     void Start()
     {
         float sizeDelta = storeButton.GetComponent<RectTransform>().sizeDelta.y;
-        gridLayout.sizeDelta = new Vector2(gridLayout.sizeDelta.x, sizeDelta + (20 + sizeDelta) * (shopItems.Length - 1));
-        
-        foreach (ShopItemsSO item in shopItems)
+        gridLayout.sizeDelta = new Vector2(gridLayout.sizeDelta.x, sizeDelta + (20 + sizeDelta) * (TurretRegisterAuthor.TurretRegisterAuthorBaker.ShopItems.Length - 1));
+
+        for (var index = 0; index < TurretRegisterAuthor.TurretRegisterAuthorBaker.ShopItems.Length; index++)
         {
+            ShopItemsSO item = TurretRegisterAuthor.TurretRegisterAuthorBaker.ShopItems[index];
             Button b = Instantiate(storeButton, gridLayout);
-            //b.onClick.AddListener(() => PlacementMode.instance.BindTurret(item));
-            b.onClick.AddListener(() => print(item));
-            
+            b.onClick.AddListener(() => PlacementMode.Instance.BindTurret(item, index));
+
             Transform t = b.transform;
             t.GetChild(0).GetComponent<Image>().color = StaticUtilities.colorConversion[item.Type];
             t.GetChild(0).GetChild(0).GetComponent<Image>().sprite = item.Icon;

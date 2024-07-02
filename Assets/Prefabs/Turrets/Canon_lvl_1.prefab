@@ -199,8 +199,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4000014011301926}
   m_Father: {fileID: 0}
@@ -289,6 +289,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 2
+  upDownJoint: {fileID: 0}
+  leftRightJoint: {fileID: 0}
+  eye: {fileID: 0}
 --- !u!114 &4794104762428083677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,9 +304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ebca955fe742ce9d833f0a3653e542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cannons:
-  - stats: {fileID: 11400000, guid: 06f993d442517e94c8760575f7b967e6, type: 2}
-    firePoint: {fileID: 5798030532688113421}
 --- !u!1 &3098483348016752953
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,5 +348,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e364000476042bab8b0368278fb01a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3854028488776676121, guid: 15afcf6034868dd4ea3bcaf32cc33e82,
-    type: 3}
+  stats: {fileID: 0}

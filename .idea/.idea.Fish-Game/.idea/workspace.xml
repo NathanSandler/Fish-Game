@@ -5,552 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6f2e17a-179c-4b62-880f-3a729590e9c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Laser.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Laser.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Particles/Explosions.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Particles/Explosions.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Particles/LaserHit.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Particles/LaserHit.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Particles/ShootEffect.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Particles/ShootEffect.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/BasicSquareMask.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/BasicSquareMask.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/Beam.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/Beam.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/BeamDecal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/BeamDecal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/Explosion01-light_5x5.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/Explosion01-light_5x5.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish/Eel.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish/Eel.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish/Tuna.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish/Tuna.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Explosions.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Explosions.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/HitVFX.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/HitVFX.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/LaserHit.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/LaserHit.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/ShootEffect.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/ShootEffect.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Laser.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Laser.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Projectile 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Projectile 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Projectile.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Projectile.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Rocket.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Rocket.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AuthoringBaking/LifetimeBaker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cannon/Explosive Cannon.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cannon/Explosive Cannon.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ProjectileS/Laser.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ProjectileS/Laser.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ProjectileS/Rocket.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ProjectileS/Rocket.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/InverseHullOutline.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/InverseHullOutline.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/Outline.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Shaders/Outline.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/TowerPlacement.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/TowerPlacement.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/PlacementAuthor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/PlacementAuthor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/TurretRegisterSingletonSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/TurretRegisterSingletonSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/ObjectPlacer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/ObjectPlacer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/TowerObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/TowerObject.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fish-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fish-Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/ION_Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/ION_Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/ION_SceneSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/ION_SceneSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/IONcannon.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/IONcannon.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/Materials/Floor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/Materials/Floor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/Materials/IONcannon_metal.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/Materials/IONcannon_metal.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/Materials/fire.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Models/Materials/fire.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Prefabs/BEAM.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Prefabs/BEAM.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Prefabs/IONcannon (basic).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Prefabs/IONcannon (basic).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Prefabs/IONcannon_functional_base (drag the Rotor Body in play mode).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Prefabs/IONcannon_functional_base (drag the Rotor Body in play mode).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/Floor_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/Floor_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/fire_1.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/fire_1.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/ION Photoshop.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/ION Photoshop.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_NRM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_NRM.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_black.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_black.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_blue.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_blue.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_glow.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_glow.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_green.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_green.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_metal.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_metal.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_pink.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_pink.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_red.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_red.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_yellow.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/Textures/ion_textures/IONcannon_yellow.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Cannon_1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Cannon_1.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Cannon_2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Cannon_2.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Large Servo Motor_1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Large Servo Motor_1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Large Servo Motor_2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Large Servo Motor_2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Machine Automatic_2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Machine Automatic_2.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Machinery 3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Machinery 3.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Paper Shredder 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Paper Shredder 3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Ratchets-1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Ratchets-1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Small Electrical Motor_1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Small Electrical Motor_1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Small Electrical Motor_2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Small Electrical Motor_2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Small Electrical Motor_3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Small Electrical Motor_3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Sword Clangs_2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/Sword Clangs_2.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/ammo_1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/ammo_1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/anvil_1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/anvil_1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/anvil_2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/anvil_2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/anvil_3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/anvil_3.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/anvil_4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/anvil_4.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/drill_1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/drill_1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/laser_electric_beam.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/laser_electric_beam.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/load_1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/load_1.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/sci_fi_space_lazer_3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/sci_fi_space_lazer_3.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/triger_1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/ION_Cannon/sounds/triger_1.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_1.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_1.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_2.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_2.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_2.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_2.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_3.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_3.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_3.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_3.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_4_var_1.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_4_var_1.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_4_var_1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_4_var_1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_4_var_2.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_4_var_2.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_4_var_2.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Canon_lvl_4_var_2.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Materials/Kons_1_1_diffuse.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Materials/Kons_1_1_diffuse.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Turrets.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Turrets.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Turrets_MaskMap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Models/Turrets_MaskMap.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_ao.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_ao.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_d.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_d.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_e.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_e.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_n.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_n.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_s.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/Textures/Canon_s.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/demo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/demo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/demoSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sci-fi turrets/demoSettings.lighting.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Eel.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Eel.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HitVFX.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HitVFX.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tuna.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tuna.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Boat_01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Boat_01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Cave_Entance_01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Cave_Entance_01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_02.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_02.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_03.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_03.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_04.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_04.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_05.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_05.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_06.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_06.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_07.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_07.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_08.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_08.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_09.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_09.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_10.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_10.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_11.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_11.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_12.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_12.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_13.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_13.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_14.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_14.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_15.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Coral_15.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Fish_01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Fish_01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Jellyfish_01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Jellyfish_01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_LightShaft.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_LightShaft.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Plane.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Plane.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Plane_Turbine.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Plane_Turbine.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_02.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_02.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_03.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_03.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_04.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_04.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_05.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_05.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_06.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_06.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_07.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_07.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_08.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_08.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_09.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_09.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_10.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Rock_10.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_02.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_02.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_03.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_03.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_04.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_04.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_05.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_05.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_06.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_06.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_07.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_07.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_08.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Seaweed_08.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Shark_Body.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Shark_Body.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Shark_Head.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Shark_Head.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Starfish_01.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Starfish_01.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Starfish_02.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Starfish_02.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Torch.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Mesh/SM_Torch.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Boat_01_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Boat_01_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Boat_01_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Boat_01_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Boat_01_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Boat_01_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Bubble_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Bubble_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Caustics_02_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Caustics_02_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Caustics_02_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Caustics_02_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Caustics_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Caustics_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Caustics_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Caustics_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Cliff_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Cliff_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Cliff_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Cliff_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Cliff_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Cliff_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_01_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_01_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_01_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_01_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_01_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_01_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_02_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_02_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_02_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_02_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_02_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_02_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_03_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_03_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_03_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_03_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_03_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_03_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_04_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_04_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_04_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_04_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_04_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_04_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_06_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_06_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_06_E.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_06_E.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_06_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_06_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_06_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_06_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_07_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_07_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_07_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_07_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_07_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_07_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_08_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_08_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_08_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_08_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_08_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_08_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_09_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_09_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_09_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_09_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_09_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_09_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_13_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_13_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_13_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_13_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_13_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_13_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_14_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_14_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_14_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_14_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_14_O.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_14_O.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_14_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_14_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_15_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_15_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_15_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_15_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_15_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Coral_15_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Defined_Spot_IES.EXR" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Defined_Spot_IES.EXR.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Dust_Particle_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Dust_Particle_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Fish_01_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Fish_01_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Fish_01_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Fish_01_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Fish_01_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Fish_01_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Jellyfish_01_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Jellyfish_01_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Jellyfish_01_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Jellyfish_01_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Jellyfish_01_O.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Jellyfish_01_O.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Jellyfish_01_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Jellyfish_01_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_LargeWaves_H.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_LargeWaves_H.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Large_Wave_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Large_Wave_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_MediumWaves_H.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_MediumWaves_H.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_MediumWaves_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_MediumWaves_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Plane_Turbine_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Plane_Turbine_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Plane_Turbine_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Plane_Turbine_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Plane_Turbine_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Plane_Turbine_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Reflection_Surface.HDR" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Reflection_Surface.HDR.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_01_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_01_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_01_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_01_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_01_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_01_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_02_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_02_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_02_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_02_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_02_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_02_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_03_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_03_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_03_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_03_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_03_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_03_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_04_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_04_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_04_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_04_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_04_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_04_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_05_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_05_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_05_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_05_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_05_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_05_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_06_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_06_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_06_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_06_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_06_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_06_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_07_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_07_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_07_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_07_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_07_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_07_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_08_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_08_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_08_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_08_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_08_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_08_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_09_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_09_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_09_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_09_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_09_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Rock_09_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_01_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_01_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_01_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_01_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_01_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_01_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_02_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_02_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_02_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_02_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_02_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_02_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_03_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_03_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_03_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_03_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_03_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_03_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_Debris_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Sand_Debris_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_03_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_03_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_03_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_03_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_03_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_03_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_07_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_07_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_07_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_07_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_07_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_07_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Seaweed_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Shark_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Shark_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Shark_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Shark_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_SmallWaves_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_SmallWaves_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Smoke_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Smoke_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Starfish_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Starfish_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Starfish_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Starfish_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Starfish_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Starfish_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Torch_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Torch_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Torch_N.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Torch_N.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Torch_R.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Torch_R.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Variation_D.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/T_Variation_D.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/tex_diffuse.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/tex_diffuse.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/tex_normal.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Reef/Game/ReefKit/Textures/tex_normal.PNG.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/Explosions.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/Explosions.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/HitVFX.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/HitVFX.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/LaserHit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/LaserHit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Particles/ShootEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Particles/ShootEffect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_4_var_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_4_var_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/Unity Physics/1.0.16/Custom Physics Authoring/Unity.Physics.Custom/Joints/LimitDOFJoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/Unity Physics/1.0.16/Custom Physics Authoring/Unity.Physics.Custom/Joints/LimitDOFJoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FishGameEcs.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FishGameEcs.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/CannonAuthor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/CannonAuthor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Components/EnhancedCannonComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Components/EnhancedCannonComponents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/EnhancedTurretSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/EnhancedTurretSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cannon/Basic Cannon.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cannon/Basic Cannon.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cannon/Shotgun.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cannon/Shotgun.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cannon/ionCanon.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Cannon/ionCanon.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CannonStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CannonStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/ProjectileSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/ProjectileSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/ControlHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/ControlHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlacementMode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlacementMode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UI/UIShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UI/UIShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ShopItems/Turret 4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EntitiesClientSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EntitiesClientSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -561,11 +53,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/ShootingComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Components/EnhancedTurretComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/PlacementAuthor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/TurretRegisterAuthor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/EnhancedPlayerTurretControlSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Game/ObjectPlacer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UI/UIShopManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/CannonStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/PlayerTurretControlSystem.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -581,7 +77,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -589,13 +88,14 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\gabek\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\gabek\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\gabek\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\darry\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\darry\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\darry\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -609,7 +109,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Users\gabek\Documents\2022.3.19f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="N:\Unity\2022.3.19f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\gabek\Documents\Fish-Game -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\gabek\Documents\Fish-Game" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -617,9 +117,17 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Users\gabek\Documents\2022.3.19f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="N:\Unity\2022.3.19f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\gabek\Documents\Fish-Game -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\gabek\Documents\Fish-Game" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="N:\Unity\2022.3.19f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath N:\Fish-Game -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="N:\Fish-Game" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
@@ -665,19 +173,35 @@
       <workItem from="1719113325859" duration="7118000" />
       <workItem from="1719167907533" duration="635000" />
       <workItem from="1719326450596" duration="2138000" />
+      <workItem from="1719777928412" duration="4775000" />
+      <workItem from="1719789865314" duration="1024000" />
+      <workItem from="1719879660903" duration="2338000" />
+      <workItem from="1719932461312" duration="7157000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
     <option name="unityProject" value="true" />
     <option name="unityProjectFolder" value="true" />
   </component>
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
