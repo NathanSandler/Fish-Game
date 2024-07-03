@@ -2158,7 +2158,7 @@ MonoBehaviour:
   upDownJoint: {fileID: 4000011214720155}
   leftRightJoint: {fileID: 4000012566209251}
   eye: {fileID: 3486903599447867293}
-  range: 0
+  range: 100
 --- !u!23 &793454429145613628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2520,7 +2520,7 @@ MonoBehaviour:
   upDownJoint: {fileID: 4315640641976030152}
   leftRightJoint: {fileID: 373547958457492950}
   eye: {fileID: 6663883797438950131}
-  range: 0
+  range: 100
 --- !u!1 &3442337151096066703
 GameObject:
   m_ObjectHideFlags: 0

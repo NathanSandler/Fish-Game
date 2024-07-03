@@ -55,7 +55,6 @@ public partial struct ProjectileSystem : ISystem
     {
         [ReadOnly(true)] public ComponentLookup<LocalToWorld> Positions;
         public ComponentLookup<ProjectileComponentBlob> Projectiles;
-        public ComponentLookup<PhysicsCollider> sd;
         public ComponentLookup<HealthComponent> EnemiesHealth;
         public EntityCommandBuffer ECB;
         public BufferLookup<HitList> HitLists;

@@ -17,7 +17,7 @@ namespace Enhanced_Turrets.Systems
         [ReadOnly] private ComponentLookup<LocalToWorld> transformLookup;
         [ReadOnly] private ComponentLookup<FishComponent> fishLookup;
         [ReadOnly] private ComponentLookup<AiTurretComponent> turretLookup;
-        private BufferLookup<TargetableComponent> targetLookup;
+        [ReadOnly]  private BufferLookup<TargetableComponent> targetLookup;
         private EntityTypeHandle _entityHandle;
 
         [BurstCompile]
@@ -45,9 +45,12 @@ namespace Enhanced_Turrets.Systems
             state.Dependency = new ColliderTargetJob()
             {
                 targets = targetLookup,
-                Fish = fishLookup
+                Fish = fishLookup,
+                Turret = turretLookup
             }.Schedule(SystemAPI.GetSingleton<SimulationSingleton>(), state.Dependency);
 
+            state.Dependency.Complete();
+            
             state.Dependency = new DistanceCheckJob()
             {
                 targets = targetLookup,
@@ -55,19 +58,24 @@ namespace Enhanced_Turrets.Systems
                 Positions = transformLookup,
                 Turrets = turretLookup
             }.ScheduleParallel(_query, state.Dependency);
+            
         }
         
         [BurstCompile]
         private struct ColliderTargetJob : ITriggerEventsJob
         {
-            public BufferLookup<TargetableComponent> targets;
+            [ReadOnly]  public BufferLookup<TargetableComponent> targets;
             [ReadOnly] public ComponentLookup<FishComponent> Fish;
+            [ReadOnly] public ComponentLookup<AiTurretComponent> Turret;
             
             public void Execute(TriggerEvent triggerEvent)
             {
                 Entity turret = Entity.Null;
                 Entity fish = Entity.Null;
 
+                if(!Fish.HasComponent(triggerEvent.EntityA) || !Turret.HasComponent(triggerEvent.EntityB)) return;
+                
+                
                 if (!Fish.HasComponent(triggerEvent.EntityA))
                 {
                     turret = triggerEvent.EntityA;
@@ -91,7 +99,7 @@ namespace Enhanced_Turrets.Systems
         {
             [ReadOnly] public ComponentLookup<LocalToWorld> Positions;
             [ReadOnly] public ComponentLookup<AiTurretComponent> Turrets;
-            public BufferLookup<TargetableComponent> targets;
+            [ReadOnly]  public BufferLookup<TargetableComponent> targets;
             [ReadOnly] public EntityTypeHandle entityHandle;
 
             public void Execute(in ArchetypeChunk chunk, int unfilteredChunkIndex, bool useEnabledMask, in v128 chunkEnabledMask)
