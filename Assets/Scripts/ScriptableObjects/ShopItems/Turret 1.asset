@@ -17,5 +17,5 @@ MonoBehaviour:
   <Prefab>k__BackingField: {fileID: 4000012604501588, guid: 2652172d138981b4abc806ea8ec36564,
     type: 3}
   <Cost>k__BackingField: 30
-  <Radius>k__BackingField: 8
+  <Radius>k__BackingField: 1
   <Type>k__BackingField: 1

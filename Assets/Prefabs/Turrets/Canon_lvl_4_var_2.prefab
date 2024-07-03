@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 95000012164270796}
   - component: {fileID: 613195553538266456}
   - component: {fileID: -1049293959931504970}
+  - component: {fileID: -9066543817528216097}
   m_Layer: 0
   m_Name: Canon_lvl_4_var_2
   m_TagString: Untagged
@@ -210,6 +211,7 @@ MonoBehaviour:
   upDownJoint: {fileID: 4000011187994668}
   leftRightJoint: {fileID: 4000012604501588}
   eye: {fileID: 3486903599419011882}
+  range: 100
 --- !u!114 &-1049293959931504970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,6 +224,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ebca955fe742ce9d833f0a3653e542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &-9066543817528216097
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010153274142}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 15
+  m_Center: {x: 0, y: 0.3065894, z: 0.09309788}
 --- !u!1 &1000010604689152
 GameObject:
   m_ObjectHideFlags: 0

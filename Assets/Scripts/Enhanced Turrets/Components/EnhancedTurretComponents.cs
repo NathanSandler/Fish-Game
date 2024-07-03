@@ -5,7 +5,7 @@ namespace Enhanced_Turrets.Components
 {
     public struct ActiveTurretComponent : IComponentData, IEnableableComponent
     {
-
+        
     }
 
 //Disabling this disables the turrets rotation
@@ -15,6 +15,8 @@ namespace Enhanced_Turrets.Components
         public Entity LeftRightRotation;
         public Entity UpDownRotation;
         public Entity Eye;
+        public Entity Target;
+        public float Range;
     }
 
     public struct ControlledTurretComponent : IComponentData, IEnableableComponent

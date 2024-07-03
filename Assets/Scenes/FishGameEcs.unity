@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fae7e0e0aa67d24e8b87fd1b224b02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ShopItemsSo>k__BackingField:
+  ShopItemsSo:
   - {fileID: 11400000, guid: 24fd0473f6fb6014a9a67a620084d680, type: 2}
   - {fileID: 11400000, guid: 245f65eb4b087b54b8448f3b36ae4bb8, type: 2}
   - {fileID: 11400000, guid: 9b7b02da17c2f034f9c7f7291cb2fae8, type: 2}
@@ -2158,6 +2158,7 @@ MonoBehaviour:
   upDownJoint: {fileID: 4000011214720155}
   leftRightJoint: {fileID: 4000012566209251}
   eye: {fileID: 3486903599447867293}
+  range: 0
 --- !u!23 &793454429145613628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2519,6 +2520,7 @@ MonoBehaviour:
   upDownJoint: {fileID: 4315640641976030152}
   leftRightJoint: {fileID: 373547958457492950}
   eye: {fileID: 6663883797438950131}
+  range: 0
 --- !u!1 &3442337151096066703
 GameObject:
   m_ObjectHideFlags: 0

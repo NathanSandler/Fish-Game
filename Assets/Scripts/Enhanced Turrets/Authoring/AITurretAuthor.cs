@@ -1,6 +1,7 @@
 using Enhanced_Turrets.Components;
 using Unity.Entities;
 using UnityEngine;
+using UnityEngine.Rendering.HighDefinition;
 
 public class AITurretAuthor : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class AITurretAuthor : MonoBehaviour
     [SerializeField] private Transform upDownJoint;
     [SerializeField] private Transform leftRightJoint;
     [SerializeField] private Transform eye;
+    [SerializeField] private float range;
     private class AITurretAuthorBaker : Baker<AITurretAuthor>
     {
         public override void Bake(AITurretAuthor authoring)
@@ -18,8 +20,11 @@ public class AITurretAuthor : MonoBehaviour
                 TurningSpeed =  authoring.rotationSpeed,
                 LeftRightRotation = GetEntity(authoring.leftRightJoint, TransformUsageFlags.Dynamic),
                 UpDownRotation = GetEntity(authoring.upDownJoint, TransformUsageFlags.Dynamic),
-                Eye = GetEntity(authoring.eye, TransformUsageFlags.Dynamic)
+                Eye = GetEntity(authoring.eye, TransformUsageFlags.Dynamic),
+                Range = authoring.range
             });
+
+            AddBuffer<TargetableComponent>(entity);
         }
     }
 }

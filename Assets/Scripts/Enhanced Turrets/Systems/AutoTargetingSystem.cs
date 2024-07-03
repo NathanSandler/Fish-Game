@@ -2,6 +2,7 @@ using Enhanced_Turrets.Components;
 using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
+using Unity.Physics;
 using Unity.Transforms;
 using UnityEngine;
 
@@ -17,6 +18,18 @@ namespace Enhanced_Turrets.Systems
 
             foreach (var (turret, entity) in SystemAPI.Query<RefRO<AiTurretComponent>>().WithEntityAccess())
             {
+                //Job here
+                
+                if (!state.EntityManager.Exists(turret.ValueRO.Target))
+                {
+                    foreach (var shootingComponent in SystemAPI.GetBuffer<EnhancedShootingComponent>(entity))
+                    {
+                        SystemAPI.SetComponentEnabled<EnhancedCannonComponent>(shootingComponent.Cannon, false);
+                    }
+                    
+                    continue;
+                }
+                
                 var value = turret.ValueRO;
                 var horizontal = SystemAPI.GetComponent<LocalTransform>(value.LeftRightRotation);
                 var vertical = SystemAPI.GetComponent<LocalTransform>(value.UpDownRotation);
