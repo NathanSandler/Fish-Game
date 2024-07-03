@@ -1,12 +1,14 @@
 using Unity.Burst;
 using Unity.Entities;
+using Unity.Mathematics;
 using Unity.Transforms;
+using UnityEngine;
 
 namespace Enhanced_Turrets.Systems
 {
     [BurstCompile]
     [UpdateInGroup(typeof(SimulationSystemGroup))]
-    [UpdateAfter(typeof(BeginInitializationEntityCommandBufferSystem))]
+    [UpdateBefore(typeof(BeginFixedStepSimulationEntityCommandBufferSystem))]
     public partial struct TurretRegisterSingletonSystem : ISystem
     {
         [BurstCompile]
@@ -16,32 +18,28 @@ namespace Enhanced_Turrets.Systems
            state.RequireForUpdate<TurretVariants>();
         }
 
-        [BurstCompile]
+        //[BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
             Entity ent = SystemAPI.GetSingletonEntity<TurretVariants>();
-
-            if (!SystemAPI.IsComponentEnabled<TurretRegisterSingleton>(ent)) return;
             
+            // Ensure the entity exists and is valid
+            if (!SystemAPI.IsComponentEnabled<TurretRegisterSingleton>(ent)) return;
+            SystemAPI.SetComponentEnabled<TurretRegisterSingleton>(ent, false);
+
             TurretRegisterSingleton register = SystemAPI.GetComponent<TurretRegisterSingleton>(ent);
             var buffer = SystemAPI.GetBuffer<TurretVariants>(ent);
-
-
-            //EntityCommandBuffer ecb = new EntityCommandBuffer(Allocator.TempJob);
+            
 
             Entity newTurret = state.EntityManager.Instantiate(buffer[register.TurretID].Entity);
 
-            //Entity newTurret  = ecb.Instantiate(buffer[register.TurretID].Entity);
             
             SystemAPI.SetComponent(newTurret, new LocalTransform()
             {
-                Position = register.Location
+                Position = register.Location,
+                Rotation = quaternion.identity,
+                Scale = register.Scale
             });
-            
-            SystemAPI.SetComponentEnabled<TurretRegisterSingleton>(ent, false);
-
-            //ecb.Playback(state.EntityManager);
-            //ecb.Dispose();
         }
     }
 }

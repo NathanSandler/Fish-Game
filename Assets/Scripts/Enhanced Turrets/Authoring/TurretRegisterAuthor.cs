@@ -35,6 +35,7 @@ public struct TurretRegisterSingleton : IComponentData, IEnableableComponent
 {
     public int TurretID;
     public float3 Location;
+    public float Scale;
 }
 
 [InternalBufferCapacity(16)]

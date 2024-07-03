@@ -21,13 +21,15 @@ public class TowerObject : MonoBehaviour
     //Pass down required info... Which well isn't much...
     public void Initialize(Transform binding, ShopItemsSO stats, int index)
     {
-        transform.localScale = binding.localScale;
+        var localScale = binding.localScale;
+        transform.localScale = localScale;
         //Convert the object to an entity. Alternatively, could have a singleton system in ECS and just tell it what tower and where 
         Entity singleton = ObjectPlacer.EntityManager.CreateEntityQuery(new EntityQueryBuilder(Allocator.Temp).WithDisabled<TurretRegisterSingleton>()).ToEntityArray(Allocator.Temp)[0]; //typeof(TurretRegisterSingleton)
         ObjectPlacer.EntityManager.SetComponentData(singleton, new TurretRegisterSingleton()
         {
             Location = binding.position,
-            TurretID = index
+            TurretID = index,
+            Scale = localScale.x
         });
         
         Debug.Log("Trying to create a turret with ID: " + index + "at position:  " + binding.position);

@@ -55,6 +55,7 @@ public partial struct ProjectileSystem : ISystem
     {
         [ReadOnly(true)] public ComponentLookup<LocalToWorld> Positions;
         public ComponentLookup<ProjectileComponentBlob> Projectiles;
+        public ComponentLookup<PhysicsCollider> sd;
         public ComponentLookup<HealthComponent> EnemiesHealth;
         public EntityCommandBuffer ECB;
         public BufferLookup<HitList> HitLists;
@@ -63,9 +64,10 @@ public partial struct ProjectileSystem : ISystem
         [BurstCompile]
         public void Execute(TriggerEvent triggerEvent)
         {
+            
             Entity projectile = Entity.Null;
             Entity enemy = Entity.Null;
-            
+
             if (Projectiles.HasComponent(triggerEvent.EntityA))
                 projectile = triggerEvent.EntityA;
             if (Projectiles.HasComponent(triggerEvent.EntityB))
