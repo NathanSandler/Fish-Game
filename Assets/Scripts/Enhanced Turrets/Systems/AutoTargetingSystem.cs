@@ -36,7 +36,7 @@ namespace Enhanced_Turrets.Systems
                 var eye = SystemAPI.GetComponent<LocalToWorld>(value.Eye);
 
                 // Assume target at (0,0,0)
-                float3 target = new float3(0, 0, 0);
+                float3 target = SystemAPI.GetComponent<LocalToWorld>(value.Target).Position;
                 float3 origin = eye.Position;
 
                 // Calculate direction to target from turret base

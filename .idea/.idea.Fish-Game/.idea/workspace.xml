@@ -6,12 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a6f2e17a-179c-4b62-880f-3a729590e9c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fish-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fish-Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsCategoryNames.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PhysicsCategoryNames.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_4_var_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Turrets/Canon_lvl_4_var_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fish/Tuna.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fish/Tuna.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/FishGameEcs.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FishGameEcs.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/AITurretAuthor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Authoring/AITurretAuthor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Components/TargetableComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Components/TargetableComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/AutoTargetingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/AutoTargetingSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/ColliderTargetingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/ColliderTargetingSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/ProjectileSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/ProjectileSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/FishDeletionSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enhanced Turrets/Systems/FishDeletionSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Fish/Tuna.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Fish/Tuna.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +150,7 @@
       <workItem from="1719777928412" duration="4775000" />
       <workItem from="1719789865314" duration="1024000" />
       <workItem from="1719879660903" duration="2338000" />
-      <workItem from="1719932461312" duration="15030000" />
+      <workItem from="1719932461312" duration="18733000" />
     </task>
     <servers />
   </component>

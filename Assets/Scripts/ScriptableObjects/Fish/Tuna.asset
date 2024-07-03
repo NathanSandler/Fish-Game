@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7893808aefd424ea7089b5da968b42, type: 3}
   m_Name: Tuna
   m_EditorClassIdentifier: 
-  <Health>k__BackingField: 50
-  <Speed>k__BackingField: 5
+  <Health>k__BackingField: 1
+  <Speed>k__BackingField: 15

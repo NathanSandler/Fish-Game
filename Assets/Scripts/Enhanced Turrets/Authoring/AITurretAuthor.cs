@@ -24,7 +24,6 @@ public class AITurretAuthor : MonoBehaviour
                 Range = authoring.range
             });
 
-            AddBuffer<TargetableComponent>(entity);
         }
     }
 }
